@@ -1,0 +1,52 @@
+// // Clearfix Mixin
+// @mixin clearfix() {
+//   &::before, &::after {
+//     content:"";
+//     display:block;
+//     clear:both;
+//   }
+// }
+
+// General
+body {
+  background-color:lightgray;
+}
+.AppContainer {
+  text-align:center;
+}
+
+// // Utility Classes
+// .clearfix {
+//   @include clearfix;
+// }
+
+// Nav
+nav {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  min-height:10vh;
+  background-color:rgba(73,79,82,1);
+  color:#FFF;
+  ul {
+    width:40%;//I would put a min-width instead
+    display:flex;
+    justify-content:space-around;
+    //align-items:center;
+    list-style-type:none;
+  }
+}
+
+// Panels
+article {
+  img {
+    max-width:10%;
+  }
+}
+
+// Article Page
+section.article-page {
+  img {
+    max-width:30%;
+  }
+}
